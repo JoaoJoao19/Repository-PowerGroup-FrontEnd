@@ -40,7 +40,9 @@ print("la suma de los numeros impares es:",suma4)
 print("el ciclo se ejcuto",cuenta4, "veces")
 
 
-
+###Soy Juan Felipe y estoy modificando su codigo
+###creo que ya logre instalar un gi o git hub 
+###me ahorre el reinstalar todo el windows lol 10:01am
 
 
 
