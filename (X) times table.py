@@ -1,5 +1,3 @@
-//un ejemplo para probar... 07:11am  
-  
 #1 to 10 times tables Program 
 
 value = int(input("Enter the value to make the tables: "))
