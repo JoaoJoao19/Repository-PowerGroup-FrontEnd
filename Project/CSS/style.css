@@ -9,7 +9,7 @@
     margin: auto;
     height: 100%;
     width: 100%;
-    font-family: monospace;
+    font-family: -webkit-pictograph;
     margin: 0;
     text-align: center;
 }
@@ -40,7 +40,6 @@
     border-radius: 8px;
     padding: 50px 40px;
     box-shadow: 0 0 10px 0 rgb(0 0 0 );
-
 }
 
 .login{
@@ -53,7 +52,7 @@
     position: absolute;
 }
 .input{
-    margin-top: 100px;
+    margin-top: 130px;
 }
 
 .image{
@@ -68,6 +67,7 @@
     justify-content: center;
     margin-bottom: 10px; 
     padding: 5px;
+    padding-right: 50px;
     border-radius: 5px;  
     text-align: center;
 }
@@ -75,9 +75,51 @@
 .button{
     background-color: #005285;
     color: white;
-    font-size: 120%;
+    font-size: 150%;
     padding: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
     border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*.footer1{
+.boton{
+    font-size: 100%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}*/
+
+.opcion-registro{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: baseline;
+}
+
+
+.contenedor-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;   
+}
+
+
+.inputs{
+    padding: 10px;
+    padding-right: 200px;
+    align-items: center;
+    text-align: start;
+}
+
+.btn-submit{
+    font-size: 150%;
     cursor: pointer;
     justify-content: center;
     align-items: center;
@@ -91,6 +133,7 @@
     color:white;
     text-align:center;
     bottom:0;
+    padding-top: 15px;
     left:0;
     width:100%;
 }*/
@@ -104,7 +147,7 @@
     margin: auto;
     height: 100%;
     width: 100%;
-    font-family: monospace;
+    font-family: -webkit-pictograph;
     margin: 0;
     text-align: center;
 }
@@ -137,7 +180,6 @@
     padding-bottom: 20px;
     /*box-shadow: 0 0 10px 0 rgb(0 0 0);  this is the original version of power team*/ 
     box-shadow: 0 0 10px 0 rgb(156 211 240); /* this is my version*/
-    
 }
 
 
