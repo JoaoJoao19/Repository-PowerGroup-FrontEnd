@@ -23,31 +23,30 @@
     align-items: center;
 }
 
-.header1{
+/*.header1{
     position: initial;
     background:#005285;
     color:white;
     text-align:center;
     width:100%;
     height: 10%;
-}
+}*/
 
 .portal{
     height: auto;
-    margin-top: 50px;
-    margin-right: 300px;
-    border-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-top: 100px;
+/*  margin-right: 300px; I change this to center mode*/
+    margin-right: auto;
+    border-radius: 8px;
+    padding: 50px 40px;
     box-shadow: 0 0 10px 0 rgb(0 0 0 );
 }
 
 .login{
     color: #1a2537;
     font-size: 20px;  
-    top: 100px;
+    /*top: 150px;*/
+    top: 70px;
     width: 200px;
     height: 110px;
     position: absolute;
@@ -70,6 +69,7 @@
     padding: 5px;
     padding-right: 50px;
     border-radius: 5px;  
+    text-align: center;
 }
 
 .button{
@@ -85,12 +85,14 @@
     align-items: center;
 }
 
+
+/*.footer1{
 .boton{
     font-size: 100%;
     cursor: pointer;
     justify-content: center;
     align-items: center;
-}
+}*/
 
 .opcion-registro{
     display: flex;
@@ -123,7 +125,7 @@
     align-items: center;
 }
 
-.footer1{
+/*.footer1{
     font-size: 20px;
     height:60px;
     position: absolute;   
@@ -134,7 +136,7 @@
     padding-top: 15px;
     left:0;
     width:100%;
-}
+}*/
 
 
 
@@ -159,27 +161,29 @@
     align-items: center;
 }
 
-.header2{
+/*.header2{
     position: initial;
     background:#005285;
     color:white;
     text-align:center;
     width:100%;
-}
+}*/
 
 .form{
+    background: #81c9ec4a;/* remove this to return to the normal one*/
     margin: auto;
-    width: fit-content;
-    border-radius: 40px;
+    width: 400px;
+    border-radius: 10px;
     padding-left: 50px;
     padding-right: 50px; 
     padding-top: 1px;
-    padding-bottom: 10px;
-    box-shadow: 0 0 10px 0 rgb(0 0 0);
+    padding-bottom: 20px;
+    /*box-shadow: 0 0 10px 0 rgb(0 0 0);  this is the original version of power team*/ 
+    box-shadow: 0 0 10px 0 rgb(156 211 240); /* this is my version*/
 }
 
 
-.footer2{
+/*.footer2{
     font-size: 20px;
     height:60px;  
     background:#005285;
@@ -188,4 +192,4 @@
     bottom:0;
     left:0;
     width:100%;
-}
+}*/
