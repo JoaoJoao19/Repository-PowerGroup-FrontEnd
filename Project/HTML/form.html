@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal IMC</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../Scripts/popup.js"></script>
+</head>
+<body class="body2" background="../Images/fondo.png">
+    <div class="container2">
+        <div class="header2">
+            <h1 style="font-size: 30px;">LA SALUD ES EL REGALO MAS GRANDE, CUÍDALA Y PROTÉGELA</h1>            
+        </div>
+            
+        <div class="form">
+            <form style="font-size: 15px;" action="" method="post">
+                <label for="IMC">
+                    <h2>Datos personales</h2>
+                </label> 
+                <div style="text-align: left">
+                    <label for="name" id="name"><strong>Nombres:</strong></label>
+                    <input type="text" id="name" name="IMC" size="50" style="width: 15em;height: 2em;border-radius: 5px;"> 
+                </div>
+                <br> 
+                <div style="text-align: left">
+                    <label for="lastname" id="lastname"><strong>Apellidos:</strong></label>
+                    <input  type="text" id="lastname" name="IMC" size="50" style="width: 15em;height: 2em;border-radius: 5px">
+                </div>
+                <br>
+                <div style="text-align: left;">
+                    <label for="phone" id="phone"  ><strong>Telefono:</strong> </label>
+                    <input type="tel" id="phone" name="IMC" size="15" style="height: 2em;border-radius: 5px">
+                </div>
+                <br>
+                <div style="text-align: left">
+                    <label for="sex"><b>Género:</b></label> 
+                    <label for="sex">Masculino</label>
+                    <input type="radio" id="male" name="IMC"> 
+                    <label for="sex">Femenino</label>
+                    <input type="radio" id="female" name="IMC"> 
+                    <label for="sex">Otro</label>
+                    <input type="radio" id="other" name="IMC">
+                </div>
+                <br>
+                <div style="text-align: left">
+                    <label for="age" class="age"><strong>Edad:</strong></label>
+                    <input  type="number" id="age" name="IMC" size="3" style="width: 3em;height: 2em;border-radius: 5px">
+                </div>
+                <br>
+                <div>
+                    <label for="faculty"><b>Facultad a la que pertenece:</b></label> 
+                    <select name="faculty" id="faculty" style="width: 25em;height: 2em;border-radius: 5px">
+                        <option value="select">Seleccione la opcion que desee</option>
+                        <option value="administration">Ciencias Económicas, Administrativas y Contables</option>
+                        <option value="health">Ciencias de la Salud</option>
+                        <option value="social">Ciencias Sociales, Humanidades y Artes</option>
+                        <option value="tecnic">Estudios Técnicos y Tecnológicos</option>
+                        <option value="engynery">Ingenería</option>
+                        <option value="politic">Ciencias Jurídicas y Políticas</option>
+                    </select> 
+                </div>
+
+                <div>
+                    <label for="data_IMC"><h2>Calcule su Indice de Masa Corporal</h2></label> <br>
+                    <label for="talla"><b>Talla (mts)</b></label>   
+                    <input  type="number" id=talla name="IMC" size="2" maxlength="2" style="width: 4em;height: 2em;border-radius: 5px" placeholder="1.70"> 
+                    <br><br>
+                    <label for="peso"><b>Peso (kgs)</b></label> 
+                    <input  type="number" id="peso" name="IMC"  maxlength="3" style="width: 4em;height: 2em;border-radius: 5px" placeholder="80"> 
+                    <br><br>
+                    <input onclick="getData()" class="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="text-align: center;" type="button" value="Calcular IMC">
+                </div>
+            </form>
+        </div>
+
+        <div class="modal fade" id="delgadez" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h3 id="resultadoImc" class="modal-title"></h3>
+                </div>
+                <div class="modal-body">
+                    
+                        <h3>DELGADEZ</h3> 
+                     
+                    <div style="text-align: left;font-size: large">              
+                        <p>
+                            Usted tiene un peso por debajo de lo normal, puede haber riesgos de salud 
+                            asociados a un IMC bajo, tales como anemia, osteoporosis, 
+                            un sistema inmune debilitado y problemas de fertilidad. 
+                        </p>
+                    </div>
+                    <div style="text-align: left;font-size: large">
+                        <p>
+                            Siga estas recomendaciones si desea aumentar de peso: <br>
+                            •	Aliméntese con 5 porciones al día entre frutas enteras y verduras frescas, ayudan a la buena digestión y a prevenir enfermedades del corazón. <br>
+                            •	Realice actividad física al menos 3 veces por día durante 30 minutos. <br>
+                            •	 Tome de 6 a 8 vasos de agua al día. <br>
+                            •	Evite el consumo de productos ultra procesados (bebidas azucaradas, productos de paquete), traen consecuencias para la salud. <br>
+                            •	Continúe manejando porciones adecuadas incluyendo verduras y frutas diariamente. <br>
+                            •	Elija alimentos ricos en nutrientes: carnes magras, lácteos o derivaos, huevos, leguminosas, frutos secos, verduras, frutas. <br>
+                            •	Respete el horario de comidas, no omita ninguna comida principal, esto altera el metabolismo. <br>
+                            •	Prefiera alimentos frescos y naturales preparados en casa, ayuda a la economía, son más seguros porque evitan enfermedades transmitidas por alimentos. <br>
+                            •	Asista al médico para descartar alguna enfermedad que imposibilite subir de peso. <br>
+                            •	Evite fumar o la exposición al humo de personas fumadoras y el consumo abusivo de bebidas alcohólicas. <br>
+                        </p>
+                    </div>
+                </div>                
+              </div>              
+        </div>         
+        </div>
+
+        <div class="modal fade" id="normal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h3 id="resultadoImc" class="modal-title"></h3>
+                    </div>
+                    <div class="modal-body">
+                        
+                            <h3>NORMAL</h3> 
+                         
+                        <div style="text-align: left;font-size: large">              
+                            <p>
+                                Muy bien, usted tiene un peso adecuado y no presenta alerta, tener un IMC normal 
+                                puede reducir el riesgo de padecer enfermedades como diabetes tipo 2, 
+                                enfermedades del corazón, infarto cerebral y algunos tipos de cáncer;                                 
+                            </p>
+                        </div>
+                        <div style="text-align: left;font-size: large">
+                            <p>
+                                Para continuar saludable siga estas recomendaciones si desea aumentar de peso: <br>
+                                •	Prefiera alimentos frescos y naturales preparados en casa, ayuda a la economía, son más seguros porque evitan enfermedades transmitidas por alimentos. <br>
+                                •	El sodio sube la presión arterial y afecta el corazón. Reduzca el consumo de sal, evite los producto ultra procesados, evite los embutidos, caldos y sopas industriales enlatadas, bebidas azucaradas y productos de paquete. <br>
+                                •	Evite los alimentos con altos contenidos de grasa, sal o azúcar; especialmente los productos ultra procesados, debido a que generar problemas de obesidad, diabetes e hipertensión entro otros. <br>
+                                •	Utilice sazonadores naturales como ajo, apio, canela, cebolla, cilantro, curry, jengibre, pimientos, albahaca, laurel, tomillo, perejil, entre otros. <br>
+                                •	Tome de 6 a 8 vasos X 8 de agua al día. <br>
+                                •	Elija siempre alimentos naturales, recuerde incluir frutas, verduras, cereales, raíces, tubérculos, plátanos, leguminosas, carnes, lácteos. Recuerde que cada uno cumple una función en el organismo. <br>
+                                •	Evite fumar o la exposición al humo de personas fumadoras. <br>
+                                •	Evite el consumo abusivo de bebidas alcohólicas. <br>
+
+                            </p>
+                        </div>
+                    </div>                
+                  </div>              
+            </div>         
+            </div>
+
+        <div class="modal fade" id="sobrepeso" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h3 id="resultadoImc" class="modal-title"></h3>
+                    </div>
+                    <div class="modal-body">
+
+                            <h3>SOBREPESO</h3> 
+
+                        <div style="text-align: left;font-size: large">              
+                            <p>
+                                Según las mediciones realizadas, usted tiene un peso por encima de lo esperado
+                                 y/o una acumulación excesiva de grasa corporal, lo cual implica que estas iniciando 
+                                 un camino que te puede llevar a la obesidad, problemas como  diabetes, hipertensión,
+                                y a una mala calidad de vida.  
+                            </p>
+                        </div>
+                        <div style="text-align: left;font-size: large">
+                            <p>
+                                Por favor atienda las siguientes recomendaciones: <br>
+                                •	Asista regularmente al médico para determinar su peso ideal y controlar la tensión arterial, glicemia y perfil lipídico. <br>
+                                •	Aliméntese con 5 porciones al día entre frutas enteras y verduras frescas, ayudan a la buena digestión y a prevenir enfermedades del corazón. <br>
+                                •	El sodio sube la presión arterial y afecta el corazón. Reduzca el consumo de sal, evite los productos ultra procesados, evite los embutidos, caldos y sopas industriales enlatadas, bebidas azucaradas y productos de paquete. <br>
+                                •	Las bebidas alcohólicas, el cigarrillo y otras sustancias, dañan los órganos y tejidos, disminuyen la calidad de vida y aumentan el riesgo cardiovascular. Por lo tanto, se deben evitar. <br>
+                                •	Elimine el consumo de azúcar en su dieta: azúcar blanca o morena, panela, miel, bebidas azucaradas, postres, dulces, chocolate, etc. <br>
+                                •	Evite alimentos con altos contenidos de grasa, sal o dulce, ya que generan problemas de obesidad, diabetes e hipertensión entre otros. <br>
+                                •	Realice actividad física al menos 3 veces por día durante 30 minutos. <br>
+                                •	 Tome de 6 a 8 vasos de agua al día. <br>
+                                •	Si usted es fumador, busque ayuda para dejar de hacerlo y evite asistir a lugares que favorezcan fumar. <br>
+                                
+                            </p>
+                        </div>
+                    </div>                
+                  </div>              
+            </div>         
+            </div>
+        
+        <div class="modal fade" id="obesidad" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h3 id="resultadoImc" class="modal-title"></h3>
+                </div>
+                <div class="modal-body">
+                    
+                        <h3>OBESIDAD</h3> 
+                     
+                    <div style="text-align: left;font-size: large">              
+                        <p>
+                            Según las mediciones realizadas, usted tiene un peso por encima de lo esperado 
+                            y/o una acumulación excesiva de grasa corporal, lo cual implica que se encuentra 
+                            en situación de riesgo, tienes mayor riesgo de padecer diabetes, hipertensión arterial,
+                             infarto, cáncer, trombosis, artritis e hígado graso.
+                        </p>
+                    </div>
+                    <div style="text-align: left;font-size: large">
+                        <p>
+                            Por favor atienda las siguientes recomendaciones: <br>
+                            •	Solicite lo más pronto posible una cita médica para realizar pruebas específicas que permitan corroborar el riesgo y recibir el manejo adecuado, a fin de evitar complicaciones. <br>
+                            •	Siga atentamente las recomendaciones del personal de salud sobre la práctica de actividad física, alimentación saludable, la toma de medicamentos y otras recomendaciones específicas de acuerdo a su estado de salud. <br>
+                            •	Inicie una adopción de hábitos alimentarios de manera progresiva, incluyendo más frutas y verduras dentro de su alimentación, reduzca el consumo de productos ultra procesados, el consumo de sal, grasas y azúcares; practicar actividad física de manera regular; dejar de fumar (si lo hace) y restringir al máximo el consumo de alcohol. <br>                            
+                        </p>
+                    </div>
+                </div>                
+              </div>              
+        </div>         
+        </div>
+        
+        
+                </div>  
+            </form>
+        </div>
+
+        <div class="footer2">
+            <footer>               
+                <p>Desarrollado por Power Group</p>
+            </footer> 
+        </div>
+
+    </div>   
+</body>
+</html>
