@@ -136,9 +136,6 @@
     width:100%;
 }
 
-
-
-
 .body2{
     position: absolute;
     background-size: 100%;
@@ -178,7 +175,6 @@
     box-shadow: 0 0 10px 0 rgb(0 0 0);
 }
 
-
 .footer2{
     font-size: 20px;
     height:60px;  
@@ -188,4 +184,42 @@
     bottom:0;
     left:0;
     width:100%;
+}
+
+.formInforme{
+    background-color: #77d4d254;
+    margin: auto;
+    width: fit-content;
+    float: left;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px; 
+    padding-top: 1px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px 0 #77d4d254;
+}
+
+.form2{
+    background-color: #77d4d254;
+    margin: auto;
+    width: 70%;
+    float: right;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 1px;
+    padding-bottom: 225px;
+    box-shadow: 0 0 10px 0 #77d4d254;
+}
+
+.form3{
+    background-color: #77d4d254;
+    margin: auto;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 10px 0 #77d4d254;
 }
